@@ -21,12 +21,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello() -> str:
-    """Return a friendly HTTP greeting.
+       return redirect("https://tringcoin.com/", code=302)
 
-    Returns:
-        A string with the words 'Hello World!'.
-    """
-    return "Hello World!"
 
 
 if __name__ == "__main__":
